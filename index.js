@@ -109,18 +109,22 @@ const port = process.env.PORT || 9090;
   require("./plugins/" + plugin);
   }
   });
-  console.log('Plugins installed successful ✅')
-  console.log('Bot connected to whatsapp ✅')
-  
-  let up = `╔═〘 𝗣𝗢𝗣𝗞𝗜𝗗 ✦ 𝗫𝗧𝗘𝗖𝗛 𝗕𝗢𝗧 〙═╗
-║ ⚡ Status      : Connected
-║ 💬 Prefix      : ${settings.PREFIX || '.'}
-║ 🧠 Session ID  : popkidglebotsession.onrender.com
-║ 📁 Repo        : github.com/devpopkid/XTECH-BOT
-║ 👑 Owner       : +254732297194
-║ ⭐ Support     : Fork ⭐ & Star 🔥
-╚═〘 Powered by Popkid Tech 💻 〙═╝`;
-    conn.sendMessage(conn.user.id, { image: { url: `https://files.catbox.moe/e6rhto.jpg` }, caption: up })
+  console.log('Plugins installed successful ✅');
+console.log('Bot connected to whatsapp ✅');
+
+let up = `╔═╡ *🇹🇿 ᴅᴍʟ-ᴍᴅ ʙᴏᴛ* ╞═╗  
+║ ⚡ *ᴜʟᴛʀᴀ sᴜᴘᴇʀ ғᴀsᴛ ᴘᴏᴡᴇʀғᴜʟ ⚠️*  
+║    *ᴡᴏʀʟᴅ ʙᴇsᴛ ʙᴏᴛ ᴅᴍʟ-ᴍᴅ* 
+║ 🤖 *ʏᴏᴜʀ sᴍᴀʀᴛ ᴡʜᴀᴛsᴀᴘᴘ ʙᴏᴛ ɪs ʀᴇᴀᴅʏ ᴛᴏ ᴜsᴇ ⤵!*  
+║ ❤️ *ᴛʜᴀɴᴋ ʏᴏᴜ ғᴏʀ ᴄʜᴏᴏsɪɴɢ ᴅᴍʟ-ᴍᴅ!* 
+╠═╡ 🔗 *ɪɴғᴏʀᴍᴀᴛɪᴏɴ* ╞═╣  
+║ ➤ *ᴘʀᴇғɪx:* ${prefix}
+║ 📢 *ᴊᴏɪɴ ᴄʜᴀɴɴᴇʟ:*  
+║    https://whatsapp.com/channel/0029Vb2hoPpDZ4Lb3mSkVI3C  
+║ 🌟 *sᴛᴀʀ ᴛʜᴇ ʀᴇᴘᴏ:*  
+║    https://github.com/MLILA17/DML-MD  
+╚═╧═ *ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴅᴍʟ 🚀* ═╧═╝`;
+    conn.sendMessage(conn.user.id, { image: { url: `https://files.catbox.moe/vcdwmp.jpg` }, caption: up })
   }
   })
   conn.ev.on('creds.update', saveCreds)
