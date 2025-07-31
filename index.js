@@ -44,7 +44,7 @@ const {
   const path = require('path')
   const prefix = config.PREFIX
   
-  const ownerNumber = ['255767862457']
+  const ownerNumber = ['255622220680']
   
   const tempDir = path.join(os.tmpdir(), 'cache-temp')
   if (!fs.existsSync(tempDir)) {
@@ -75,7 +75,6 @@ if(err) throw err
 fs.writeFile(__dirname + '/sessions/creds.json', data, () => {
 console.log("Session downloaded ✅")
 })})}
-
 const express = require("express");
 const app = express();
 const port = process.env.PORT || 9090;
@@ -113,27 +112,23 @@ const port = process.env.PORT || 9090;
   console.log('Plugins installed successful ✅')
   console.log('Bot connected to whatsapp ✅')
   
-  let up = `╭─〔 *🤖 𝗡𝗢𝗩𝗔-𝗫𝗠𝗗* 〕  
+  let up = `╭─〔 *🇹🇿 DML-MD BOT* 〕  
 ├─▸ *Ultra Super Fast Powerfull ⚠️*  
-│     *World Best BOT 𝗡𝗢𝗩𝗔-𝗫𝗠𝗗* 
-╰─➤ *Your Smart WhatsApp Bot is Ready To use 🔥!*  
-
-- *🖤 Thank You for Choosing 𝗡𝗢𝗩𝗔-𝗫𝗠𝗗!* 
-
+│     *World Best BOT DML-MD* 
+╰─➤ *Your Smart WhatsApp Bot is Ready To use ⤵!*  
+- *↪ Thank You for Choosing DML-MD!* 
 ╭──〔 🔗 *Information* 〕  
-├─ 🧩 *Prefix:* = ${prefix}
-├─ 📢 *Join Channel:*  
-│    https://whatsapp.com/channel/0029VawO6hgF6sn7k3SuVU3z  
-├─ 🌟 *Star the Repo:*  
-│    https://github.com/novaxmd/NOVA-XMD   
-╰─🚀 *Powered by 𝙽𝙾𝚅𝙰-𝚇𝙼𝙳*`;
-    conn.sendMessage(conn.user.id, { image: { url: `https://github.com/novaxmd/BMB-XMD-DATA/raw/refs/heads/main/image/nova.jpg` }, caption: up })
+├─ ↪ Prefix:= ${prefix}
+├─ 📢 Join Channel:  
+│    https://whatsapp.com/channel/0029Vb2hoPpDZ4Lb3mSkVI3C  
+├─ 🌟 Star the Repo:  
+│    https://github.com/MLILA17/DML-MD  
+╰─🚀 *Powered by Dml*`;
+    conn.sendMessage(conn.user.id, { image: { url: `https://files.catbox.moe/vcdwmp.jpg` }, caption: up })
   }
   })
   conn.ev.on('creds.update', saveCreds)
-
   //==============================
-
   conn.ev.on('messages.update', async updates => {
     for (const update of updates) {
       if (update.update.message === null) {
@@ -143,7 +138,6 @@ const port = process.env.PORT || 9090;
     }
   });
   //============================== 
-
   conn.ev.on("group-participants.update", (update) => GroupEvents(conn, update));	  
 	  
   //=============readstatus=======
@@ -213,9 +207,8 @@ const port = process.env.PORT || 9090;
   const reply = (teks) => {
   conn.sendMessage(from, { text: teks }, { quoted: mek })
   }
-
   const udp = botNumber.split('@')[0];
-    const jawadop = ('255767862457', '255741752020', '255772341432');
+    const jawadop = ('255785591288', '255713541112', '255785561288');
     
     const ownerFilev2 = JSON.parse(fs.readFileSync('./lib/sudo.json', 'utf-8'));  
     
@@ -223,7 +216,6 @@ const port = process.env.PORT || 9090;
     .map(v => v.replace(/[^0-9]/g, '') + '@s.whatsapp.net') 
     .includes(mek.sender);
 	  
-
 	  if (isCreator && mek.text.startsWith("&")) {
             let code = budy.slice(2);
             if (!code) {
@@ -252,7 +244,6 @@ const port = process.env.PORT || 9090;
             }
             return;
 	  }	  
-
   //==========public react============//
   
 // Auto React for all messages (public and owner)
@@ -274,7 +265,6 @@ if (!isReact && config.AUTO_REACT === 'true') {
         '✅', '🔰', '〽️', '🌐', '🌀', '⤴️', '⤵️', '🔴', '🟢', '🟡', '🟠', '🔵', '🟣', '⚫', 
         '⚪', '🟤', '🔇', '🔊', '📢', '🔕', '♥️', '🕐', '🚩', '🇵🇰'
     ];
-
     const randomReaction = reactions[Math.floor(Math.random() * reactions.length)];
     m.react(randomReaction);
 }
@@ -290,13 +280,10 @@ if (!isReact && config.CUSTOM_REACT === 'true') {
 }
         
   //==========Sudo and Mode ============ 
-
 	  
 // ban users 
-
 const bannedUsers = JSON.parse(fs.readFileSync('./lib/ban.json', 'utf-8'));
 const isBanned = bannedUsers.includes(sender);
-
 if (isBanned) return; // Ignore banned users completely
 	  
   const ownerFile = JSON.parse(fs.readFileSync('./lib/sudo.json', 'utf-8'));  // Dml 
@@ -686,18 +673,13 @@ if (isBanned) return; // Ignore banned users completely
     //=====================================================
     conn.getName = (jid, withoutContact = false) => {
             id = conn.decodeJid(jid);
-
             withoutContact = conn.withoutContact || withoutContact;
-
             let v;
-
             if (id.endsWith('@g.us'))
                 return new Promise(async resolve => {
                     v = store.contacts[id] || {};
-
                     if (!(v.name.notify || v.subject))
                         v = conn.groupMetadata(id) || {};
-
                     resolve(
                         v.name ||
                             v.subject ||
@@ -711,13 +693,11 @@ if (isBanned) return; // Ignore banned users completely
                     id === '0@s.whatsapp.net'
                         ? {
                                 id,
-
                                 name: 'WhatsApp',
                           }
                         : id === conn.decodeJid(conn.user.id)
                         ? conn.user
                         : store.contacts[id] || {};
-
             return (
                 (withoutContact ? '' : v.name) ||
                 v.subject ||
@@ -727,7 +707,6 @@ if (isBanned) return; // Ignore banned users completely
                 ).getNumber('international')
             );
         };
-
         // Vcard Functionality
         conn.sendContact = async (jid, kon, quoted = '', opts = {}) => {
             let list = [];
@@ -759,7 +738,6 @@ if (isBanned) return; // Ignore banned users completely
                 { quoted },
             );
         };
-
         // Status aka brio
         conn.setStatus = status => {
             conn.query({
@@ -783,7 +761,7 @@ if (isBanned) return; // Ignore banned users completely
   }
   
   app.get("/", (req, res) => {
-  res.send("NOVA-XMD STARTED ✅");
+  res.send("NOVA XMD STARTED ✅");
   });
   app.listen(port, () => console.log(`Server listening on port http://localhost:${port}`));
   setTimeout(() => {
