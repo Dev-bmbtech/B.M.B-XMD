@@ -112,19 +112,18 @@ const port = process.env.PORT || 9090;
   console.log('Plugins installed successful ✅');
 console.log('Bot connected to whatsapp ✅');
 
-let up = `╔═╡ *🇹🇿 ᴅᴍʟ-ᴍᴅ ʙᴏᴛ* ╞═╗  
-║ ⚡ *ᴜʟᴛʀᴀ sᴜᴘᴇʀ ғᴀsᴛ ᴘᴏᴡᴇʀғᴜʟ ⚠️*  
-║    *ᴡᴏʀʟᴅ ʙᴇsᴛ ʙᴏᴛ ᴅᴍʟ-ᴍᴅ* 
-║ 🤖 *ʏᴏᴜʀ sᴍᴀʀᴛ ᴡʜᴀᴛsᴀᴘᴘ ʙᴏᴛ ɪs ʀᴇᴀᴅʏ ᴛᴏ ᴜsᴇ ⤵!*  
-║ ❤️ *ᴛʜᴀɴᴋ ʏᴏᴜ ғᴏʀ ᴄʜᴏᴏsɪɴɢ ᴅᴍʟ-ᴍᴅ!* 
-╠═╡ 🔗 *ɪɴғᴏʀᴍᴀᴛɪᴏɴ* ╞═╣  
+let up = `╔═╡ *🤠 𝙽𝙾𝚅𝙰-𝚇𝙼𝙳 ʙᴏᴛ 🤠* ╞═╗    
+║ ✅ ɴᴏᴠᴀ xᴍᴅ ᴀᴄᴛɪᴠᴇ ᴇɴᴊᴏʏ ʟɪғᴇ 🥰
+╠═╡ 🔗 *ɪɴғᴏʀᴍᴀᴛɪᴏɴ* ═╣  
 ║ ➤ *ᴘʀᴇғɪx:* ${prefix}
-║ 📢 *ᴊᴏɪɴ ᴄʜᴀɴɴᴇʟ:*  
-║    https://whatsapp.com/channel/0029Vb2hoPpDZ4Lb3mSkVI3C  
-║ 🌟 *sᴛᴀʀ ᴛʜᴇ ʀᴇᴘᴏ:*  
-║    https://github.com/MLILA17/DML-MD  
-╚═╧═ *ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴅᴍʟ 🚀* ═╧═╝`;
-    conn.sendMessage(conn.user.id, { image: { url: `https://files.catbox.moe/vcdwmp.jpg` }, caption: up })
+║ 📣 *ᴊᴏɪɴ ᴄʜᴀɴɴᴇʟ:*  
+║    https://whatsapp.com/channel/0029VawO6hgF6sn7k3SuVU3z  
+║ 👤 *ᴊᴏɪɴ ɢʀᴏᴜᴘ:*  
+║    https://chat.whatsapp.com/BKoqNbYGCkK5apBNP0nzI3  
+║ 🪐 *sᴛᴀʀ ᴛʜᴇ ʀᴇᴘᴏ:*  
+║    https://github.com/novaxmd/NOVA-XMD  
+╚═╧═ *ᴘᴏᴡᴇʀᴇᴅ ʙʏ ɴᴏᴠᴀ 🛰️* ═╧═╝`;
+    conn.sendMessage(conn.user.id, { image: { url: `https://files.catbox.moe/d4vna2.jpg` }, caption: up })
   }
   })
   conn.ev.on('creds.update', saveCreds)
