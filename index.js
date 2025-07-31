@@ -120,9 +120,9 @@ const port = process.env.PORT || 9090;
 ║ 👑 Owner       : +254732297194
 ║ ⭐ Support     : Fork ⭐ & Star 🔥
 ╚═〘 Powered by Popkid Tech 💻 〙═╝`;
-
-conn.sendMessage(conn.user.id, { text: up });
-
+    conn.sendMessage(conn.user.id, { image: { url: `https://files.catbox.moe/e6rhto.jpg` }, caption: up })
+  }
+  })
   conn.ev.on('creds.update', saveCreds)
   //==============================
   conn.ev.on('messages.update', async updates => {
