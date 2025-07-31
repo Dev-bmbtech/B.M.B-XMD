@@ -112,21 +112,17 @@ const port = process.env.PORT || 9090;
   console.log('Plugins installed successful ✅')
   console.log('Bot connected to whatsapp ✅')
   
-  let up = `╭─〔 *𝘕𝘖𝘝𝘈 𝘟𝘔𝘋* 〕  
-├─▸ *ᴜʟᴛʀᴀ sᴜᴘᴇʀ ғᴀsᴛ ᴘᴏᴡᴇʀғᴜʟʟ ☠️*  
-│     *ᴡᴏʀʟᴅ ʙᴇsᴛ ʙᴏᴛ ɴᴏᴠᴀ-xᴍᴅ* 
-╰─➤ *ʏᴏᴜʀ sᴍᴀʀᴛ ᴡʜᴀᴛsᴀᴘᴘ ʙᴏᴛ ɪs ʀᴇᴀᴅʏ ᴛᴏ ᴜsᴇ 🤗!*  
-> * ❤️ ᴛʜᴀɴᴋ ʏᴏᴜ ғᴏʀ ᴄʜᴏᴏsɪɴɢ ɴᴏᴠᴀ-xᴍᴅ* 
-╭──〔 🔗 *Information* 〕  
-├─ ↪ Prefix:= ${prefix}
-├─ 📢 Join Channel:  
-│    https://whatsapp.com/channel/0029Vb2hoPpDZ4Lb3mSkVI3C  
-├─ 🌟 Star the Repo:  
-│    https://github.com/MLILA17/DML-MD  
-╰─🚀 *ᴘᴏᴡᴇʀᴇᴅ ʙʏ 𝙽𝙾𝚅𝙰-𝚇𝙼𝙳*`;
-    conn.sendMessage(conn.user.id, { image: { url: `https://files.catbox.moe/vcdwmp.jpg` }, caption: up })
-  }
-  })
+  let up = `╔═〘 𝗣𝗢𝗣𝗞𝗜𝗗 ✦ 𝗫𝗧𝗘𝗖𝗛 𝗕𝗢𝗧 〙═╗
+║ ⚡ Status      : Connected
+║ 💬 Prefix      : ${settings.PREFIX || '.'}
+║ 🧠 Session ID  : popkidglebotsession.onrender.com
+║ 📁 Repo        : github.com/devpopkid/XTECH-BOT
+║ 👑 Owner       : +254732297194
+║ ⭐ Support     : Fork ⭐ & Star 🔥
+╚═〘 Powered by Popkid Tech 💻 〙═╝`;
+
+conn.sendMessage(conn.user.id, { text: up });
+
   conn.ev.on('creds.update', saveCreds)
   //==============================
   conn.ev.on('messages.update', async updates => {
