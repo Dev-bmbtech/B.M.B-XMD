@@ -44,7 +44,7 @@ const {
   const path = require('path')
   const prefix = config.PREFIX
   
-  const ownerNumber = ['255622220680']
+  const ownerNumber = ['255772341432']
   
   const tempDir = path.join(os.tmpdir(), 'cache-temp')
   if (!fs.existsSync(tempDir)) {
@@ -112,18 +112,18 @@ const port = process.env.PORT || 9090;
   console.log('Plugins installed successful ✅')
   console.log('Bot connected to whatsapp ✅')
   
-  let up = `╭─〔 *🇹🇿 DML-MD BOT* 〕  
-├─▸ *Ultra Super Fast Powerfull ⚠️*  
-│     *World Best BOT DML-MD* 
-╰─➤ *Your Smart WhatsApp Bot is Ready To use ⤵!*  
-- *↪ Thank You for Choosing DML-MD!* 
+  let up = `╭─〔 *𝘕𝘖𝘝𝘈 𝘟𝘔𝘋* 〕  
+├─▸ *ᴜʟᴛʀᴀ sᴜᴘᴇʀ ғᴀsᴛ ᴘᴏᴡᴇʀғᴜʟʟ ☠️*  
+│     *ᴡᴏʀʟᴅ ʙᴇsᴛ ʙᴏᴛ ɴᴏᴠᴀ-xᴍᴅ* 
+╰─➤ *ʏᴏᴜʀ sᴍᴀʀᴛ ᴡʜᴀᴛsᴀᴘᴘ ʙᴏᴛ ɪs ʀᴇᴀᴅʏ ᴛᴏ ᴜsᴇ 🤗!*  
+> * ❤️ ᴛʜᴀɴᴋ ʏᴏᴜ ғᴏʀ ᴄʜᴏᴏsɪɴɢ ɴᴏᴠᴀ-xᴍᴅ* 
 ╭──〔 🔗 *Information* 〕  
 ├─ ↪ Prefix:= ${prefix}
 ├─ 📢 Join Channel:  
 │    https://whatsapp.com/channel/0029Vb2hoPpDZ4Lb3mSkVI3C  
 ├─ 🌟 Star the Repo:  
 │    https://github.com/MLILA17/DML-MD  
-╰─🚀 *Powered by Dml*`;
+╰─🚀 *ᴘᴏᴡᴇʀᴇᴅ ʙʏ 𝙽𝙾𝚅𝙰-𝚇𝙼𝙳*`;
     conn.sendMessage(conn.user.id, { image: { url: `https://files.catbox.moe/vcdwmp.jpg` }, caption: up })
   }
   })
